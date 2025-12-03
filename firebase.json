@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "kode-of"
+  },
+  "firestore": {
+    "rules": "FIRESTORE_RULES.txt"
+  }
+}
