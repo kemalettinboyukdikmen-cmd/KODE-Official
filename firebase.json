@@ -1,8 +1,16 @@
 {
-  "projects": {
-    "default": "kode-of"
-  },
-  "firestore": {
-    "rules": "FIRESTORE_RULES.txt"
+  "hosting": {
+    "public": "frontend",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
