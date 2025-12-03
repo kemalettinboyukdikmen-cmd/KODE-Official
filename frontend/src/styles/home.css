@@ -1,0 +1,60 @@
+/* Home Page Styles */
+.main-container {
+  min-height: calc(100vh - 200px);
+  flex: 1;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-text-inverse);
+  padding: var(--spacing-2xl);
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin: 0 0 var(--spacing-md) 0;
+  font-size: var(--font-size-4xl);
+}
+
+.hero-content p {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  opacity: 0.9;
+}
+
+.articles-section {
+  padding: var(--spacing-2xl) 0;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: var(--spacing-lg);
+  }
+
+  .hero-content h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+}

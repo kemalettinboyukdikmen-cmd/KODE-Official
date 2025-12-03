@@ -1,0 +1,120 @@
+/* Article Detail Page Styles */
+.article-detail {
+  background-color: var(--color-tertiary);
+  padding: var(--spacing-2xl) 0;
+}
+
+.article-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.article-detail h1 {
+  margin: 0 0 var(--spacing-xl) 0;
+  font-size: var(--font-size-4xl);
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+.article-metadata {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--color-tertiary-darkest);
+  border-radius: var(--radius-lg);
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.author-avatar-large {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-primary);
+}
+
+.author-name {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.article-dates {
+  margin: 0;
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+.article-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  font-size: var(--font-size-md);
+}
+
+.featured-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.article-content {
+  font-size: var(--font-size-md);
+  line-height: 1.8;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.article-content p {
+  margin-bottom: var(--spacing-lg);
+  text-align: justify;
+}
+
+.article-tags-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-lg);
+  background-color: var(--color-tertiary-darkest);
+  border-radius: var(--radius-lg);
+}
+
+.article-tags-section .tag {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.article-tags-section .tag:hover {
+  background-color: var(--color-primary-dark);
+}
+
+@media (max-width: 768px) {
+  .article-detail h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .article-metadata {
+    flex-direction: column;
+  }
+
+  .article-content {
+    font-size: var(--font-size-md);
+  }
+}
